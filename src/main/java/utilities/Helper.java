@@ -93,5 +93,7 @@ public class Helper {
 
     public static void hello(){
         Log.info("Hello hell!!!");
+        Log.info("refactoring...");
     }
+
 }
