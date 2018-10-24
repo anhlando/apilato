@@ -18,8 +18,8 @@ public class BackgroundSteps {
     @Given("^query for a pair of contract number and phone number to register account - assign to \\((.*)\\) and \\((.*)\\)$")
     public void get_info_for_registration(String varContractNo, String varPhoneNo) throws Throwable {
         //just sample code
-        Environment.globalVar.put("REG_CONTRACT", "3802837276");
-        Environment.globalVar.put("REG_PHONE", "0789002937");
+        Environment.globalVar.put("REG_CONTRACT", "3802833502");
+        Environment.globalVar.put("REG_PHONE", "0670998565");
     }
 
     @Given("^query for OTP to register account with contract number = \\((.*)\\) and assign to global var \\((.*)\\)$")
@@ -30,6 +30,7 @@ public class BackgroundSteps {
             String otp = Environment.dataService.getOTP(contractNo);
             Log.info("OTP to register account: " + otp);
             Environment.globalVar.put(varOTP, otp);
+
         } catch (Throwable e) {
             Log.error(e.getMessage());
             TestExecution.testScenario.setResult("FAILED");

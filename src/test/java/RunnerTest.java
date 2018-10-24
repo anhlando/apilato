@@ -10,7 +10,7 @@ import utilities.Log;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps"},
-        tags = {"@prepare_data"},
+        tags = {"@register"},
         plugin = {"steps.Hook"},
         format = {"pretty",
                 "html:target/cucumber-reports/cucumber-pretty",

@@ -12261,3 +12261,38 @@ Account has been registered: 0000168148
 2018-10-20 22:54:06 INFO  Log:18 - Test result: |DATA08|PASSED|0||
 2018-10-20 22:54:06 INFO  Log:28 - <end> End test...
 2018-10-20 22:54:06 INFO  Log:28 - <createHTMLFile> Report folder: D:\Projects\apilato\apilato\apilato\ArchivedTestReport\
+2018-10-22 13:28:03 INFO  Log:28 - <start> Start test...
+2018-10-22 13:28:03 INFO  Log:28 - <createTestDataFile> Full path to testdata file: D:\Projects\apilato-github\apilato\apilato\testdata\testdata_mobileapp3_uat.properties
+2018-10-22 13:28:03 INFO  Log:11 - Test is starting...
+2018-10-22 13:28:03 INFO  Log:28 - <set_testcase_ID> Testcase ID: BE-01 - Testcase description: Successfully register an account
+2018-10-22 13:28:03 INFO  Log:28 - <setEndpoint> Endpoint is set to: https://mobileapp3-uat.homecredit.vn/api/customer/signup/verify
+2018-10-22 13:28:03 INFO  Log:28 - <set_endpoint> Endpoint is set: https://mobileapp3-uat.homecredit.vn/api/customer/signup/verify
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Operator: a
+2018-10-22 13:28:03 INFO  Log:28 - <add_param_string> Add param: header - Content-Type:application/json
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Operator: ?
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Value: REG_PHONE
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Result: 0282569166
+2018-10-22 13:28:03 INFO  Log:28 - <add_param_string> Add param: body - PhoneNumber:0282569166
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Operator: ?
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Value: REG_CONTRACT
+2018-10-22 13:28:03 INFO  Log:28 - <parseParam> Result: 3803365427
+2018-10-22 13:28:03 INFO  Log:28 - <add_param_string> Add param: body - ContractNumber:3803365427
+2018-10-22 13:28:08 INFO  Log:28 - <execute> {
+    "response_code": -99,
+    "response_string_code": "UnknownError",
+    "response_message": "System error, please try again!"
+}
+2018-10-22 13:28:08 INFO  Log:28 - <parseParam> Operator: 0
+2018-10-22 13:28:09 ERROR Log:38 - <verify_response_value_equal> 1 expectation failed.
+JSON path response_code doesn't match.
+Expected: <0>
+  Actual: -99
+
+2018-10-22 13:28:09 INFO  Log:17 - End test!!!
+2018-10-22 13:28:09 INFO  Log:18 - Test result: |BE-01|FAILED|0|Response data does not match expected value.|1 expectation failed.
+JSON path response_code doesn't match.
+Expected: <0>
+  Actual: -99
+
+2018-10-22 13:28:09 INFO  Log:28 - <end> End test...
+2018-10-22 13:28:09 INFO  Log:28 - <createHTMLFile> Report folder: D:\Projects\apilato-github\apilato\apilato\ArchivedTestReport\
